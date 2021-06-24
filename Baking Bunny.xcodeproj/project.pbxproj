@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C8525C5FC8C2D72BB21ED7F /* Pods_Baking_Bunny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EB6A2D9C726D7D928647F3 /* Pods_Baking_Bunny.framework */; };
 		CA03323A2682C4A9003A968A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0332392682C4A9003A968A /* AppDelegate.swift */; };
 		CA03323C2682C4A9003A968A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA03323B2682C4A9003A968A /* SceneDelegate.swift */; };
 		CA03323E2682C4A9003A968A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA03323D2682C4A9003A968A /* ViewController.swift */; };
 		CA0332412682C4A9003A968A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA03323F2682C4A9003A968A /* Main.storyboard */; };
 		CA0332432682C4AA003A968A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA0332422682C4AA003A968A /* Assets.xcassets */; };
 		CA0332462682C4AA003A968A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0332442682C4AA003A968A /* LaunchScreen.storyboard */; };
+		CA03324F2683F53C003A968A /* Baking-Bunny.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA03324D2683F53C003A968A /* Baking-Bunny.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B7AED6FBEC6A63A12E4B835 /* Pods-Baking Bunny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baking Bunny.debug.xcconfig"; path = "Target Support Files/Pods-Baking Bunny/Pods-Baking Bunny.debug.xcconfig"; sourceTree = "<group>"; };
+		6B2472FDC993B4A6BC924209 /* Pods-Baking Bunny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baking Bunny.release.xcconfig"; path = "Target Support Files/Pods-Baking Bunny/Pods-Baking Bunny.release.xcconfig"; sourceTree = "<group>"; };
+		A8EB6A2D9C726D7D928647F3 /* Pods_Baking_Bunny.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Baking_Bunny.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0332362682C4A9003A968A /* Baking Bunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baking Bunny.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0332392682C4A9003A968A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA03323B2682C4A9003A968A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		CA0332422682C4AA003A968A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA0332452682C4AA003A968A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA0332472682C4AA003A968A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA03324E2683F53C003A968A /* Baking-Bunny.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Baking-Bunny.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8525C5FC8C2D72BB21ED7F /* Pods_Baking_Bunny.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144AE5E52DF02C341051297F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B7AED6FBEC6A63A12E4B835 /* Pods-Baking Bunny.debug.xcconfig */,
+				6B2472FDC993B4A6BC924209 /* Pods-Baking Bunny.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		67CAC7E0E967C34E1FB9D08C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB6A2D9C726D7D928647F3 /* Pods_Baking_Bunny.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA03322D2682C4A9003A968A = {
 			isa = PBXGroup;
 			children = (
 				CA0332382682C4A9003A968A /* Baking Bunny */,
 				CA0332372682C4A9003A968A /* Products */,
+				144AE5E52DF02C341051297F /* Pods */,
+				67CAC7E0E967C34E1FB9D08C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				CA0332422682C4AA003A968A /* Assets.xcassets */,
 				CA0332442682C4AA003A968A /* LaunchScreen.storyboard */,
 				CA0332472682C4AA003A968A /* Info.plist */,
+				CA03324D2683F53C003A968A /* Baking-Bunny.xcdatamodeld */,
 			);
 			path = "Baking Bunny";
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA03324A2682C4AA003A968A /* Build configuration list for PBXNativeTarget "Baking Bunny" */;
 			buildPhases = (
+				77FB8B5B8C396D6AD5C14EDA /* [CP] Check Pods Manifest.lock */,
 				CA0332322682C4A9003A968A /* Sources */,
 				CA0332332682C4A9003A968A /* Frameworks */,
 				CA0332342682C4A9003A968A /* Resources */,
+				73C4430F070DB79A0F5A8CAF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		73C4430F070DB79A0F5A8CAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Baking Bunny/Pods-Baking Bunny-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Baking Bunny/Pods-Baking Bunny-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Baking Bunny/Pods-Baking Bunny-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77FB8B5B8C396D6AD5C14EDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Baking Bunny-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA0332322682C4A9003A968A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +210,7 @@
 			files = (
 				CA03323E2682C4A9003A968A /* ViewController.swift in Sources */,
 				CA03323A2682C4A9003A968A /* AppDelegate.swift in Sources */,
+				CA03324F2683F53C003A968A /* Baking-Bunny.xcdatamodeld in Sources */,
 				CA03323C2682C4A9003A968A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +355,7 @@
 		};
 		CA03324B2682C4AA003A968A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7AED6FBEC6A63A12E4B835 /* Pods-Baking Bunny.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		CA03324C2682C4AA003A968A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B2472FDC993B4A6BC924209 /* Pods-Baking Bunny.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,6 +415,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA03324D2683F53C003A968A /* Baking-Bunny.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA03324E2683F53C003A968A /* Baking-Bunny.xcdatamodel */,
+			);
+			currentVersion = CA03324E2683F53C003A968A /* Baking-Bunny.xcdatamodel */;
+			path = "Baking-Bunny.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CA03322E2682C4A9003A968A /* Project object */;
 }
